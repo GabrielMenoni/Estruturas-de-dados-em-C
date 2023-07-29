@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 //Autor: Gabriel Fernandes Menoni (github.com/GabrielMenoni)
 
 //Definições de Nó e Hash
+=======
+//Defnições de tipos de dados abstratos Nó e Hash
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 typedef struct No No;
 
 struct No{

@@ -8,8 +8,13 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
+<<<<<<< HEAD
       "cwd": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Lista Encadeada Dinamica",
       "program": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Lista Encadeada Dinamica/build/Debug/outDebug",
+=======
+      "cwd": "c:/Users/conta/Desktop/Prog/Lista Encadeada Dinamica",
+      "program": "c:/Users/conta/Desktop/Prog/Lista Encadeada Dinamica/build/Debug/outDebug",
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -1,6 +1,10 @@
 //Autor: Gabriel Fernandes Menoni (github.com/GabrielMenoni)
 
+<<<<<<< HEAD
 //Inclusão de Bibliotecas / Headers
+=======
+//Inclusão de Bibliotecas e Headers
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 #include <stdlib.h>
 #include <stdio.h>
 #include "HashInt.h"
@@ -27,7 +31,11 @@ Hash* criaHash(int size){
 }
 
 /* Função Hash (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Tamanho do vetor e um numero inteiro
+=======
+Entrada: Numero
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Retorno: Indice do numero na Tabela
 Obs: Função bem básica, recomenda-se verificar e trocar caso tenha necessidade */
 int hash(int size, int num){
@@ -68,7 +76,11 @@ void insereElemento(Hash* has, int num){
 
 /* Função removeElemento (Gabriel Fernandes Menoni)
 Entrada: Tabela hash e um numero
+<<<<<<< HEAD
 Retorno: True or false (1 ou 0)
+=======
+Retorno: true or false (1 ou 0)
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Objetivo: Remove o número da tabela hash 
 Obs: Remove sempre o primeiro elemento encontrado com aquele número */
 int removeElemento(Hash* has, int num){
@@ -110,7 +122,11 @@ int removeElemento(Hash* has, int num){
 
 /* Função buscaElemento (Gabriel Fernandes Menoni)
 Entrada: Tabela hash, um numero e o endereço de um nó (recomenda-se passar &nó e não ponteiro)
+<<<<<<< HEAD
 Retorno: O indice do elemento buscado e o endereço dele na variavel ret
+=======
+Retorno: o indice do elemento buscado e o endereço dele na variavel ret
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Objetivo: Buscar um Elemento na tabela hash e retornar o seu indice e seu endereço 
 Obs: Retorna sempre o primeiro elemento com o número*/
 int buscaElemento(Hash* has, int num, No* ret){
@@ -138,7 +154,11 @@ int buscaElemento(Hash* has, int num, No* ret){
 
 /* Função qtdElementos (Gabriel Fernandes Menoni)
 Entrada: Tabela hash
+<<<<<<< HEAD
 Retorno: Quantidade de elementos na tabela hash
+=======
+Retorno: quantidade de elementos na tabela hash
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Objetivo: - */
 int qtdElementos(Hash* has){
     return has->qtd;
@@ -180,7 +200,12 @@ void imprimeHash(Hash* hash){
 Entrada: Tabela hash
 Retorno: Não possui
 Objetivo: Desalocar todo o espaço em memoria da tabela hash 
+<<<<<<< HEAD
 Obs: Não é recomendavel utilizar a tabela hash após essa função */
+=======
+Obs: Não é recomendavel utilizar nenhuma função com a tabela hash após
+     esse comando, pois a mesma possuirá comportamento indefinido. */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 void excluiHash(Hash* has){
     if(has != NULL){
         for(int i = 0; i < has->tam; i++){
@@ -195,7 +220,11 @@ void excluiHash(Hash* has){
 /* Função limpa (Gabriel Fernandes Menoni)
 Entrada: Ponteiro para Nó
 Retorno: Não possui
+<<<<<<< HEAD
 Objetivo: Auxilia a função excluiHash
+=======
+Objetivo: auxilia a função excluiHash
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Obs: Não é recomendavel utilizar a função por si só. */
 void limpa(No* aux){
     if(aux->prox != NULL){

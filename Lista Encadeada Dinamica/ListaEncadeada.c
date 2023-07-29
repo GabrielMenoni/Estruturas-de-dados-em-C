@@ -1,6 +1,10 @@
 //Autor: Gabriel Fernandes Menoni (github.com/GabrielMenoni)
 
+<<<<<<< HEAD
 //Inclusão de bibliotecas / Headers
+=======
+//Inclusão de bibliotecas
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 #include "ListaEncadeada.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +21,11 @@ Lista* criaLista(){
 }
 
 /* Função insereIndice (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista, um indice e o numero a ser inserido
+=======
+Entrada: uma lista, um indice e o numero a ser inserido
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Retorno: 0 ou 1 (true or false)
 Objetivo: Tenta inserir um numero no indice passado
 Obs: Pode inserir em listas vazias. Escopo: de 0 até N+1 (sendo N o ultimo indice) */
@@ -75,7 +83,11 @@ int insereIndice(Lista* lista, int pos, int num){
 }
 
 /* Função insereInicio (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista e o numero a ser inserido
+=======
+Entrada: uma lista e o numero a ser inserido
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Retorno: Não possui
 Objetivo: Insere um numero no indice 0 da lista */
 void insereInicio(Lista* lista, int num){
@@ -84,7 +96,11 @@ void insereInicio(Lista* lista, int num){
 }
 
 /* Função insereFinal (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista e o numero a ser inserido
+=======
+Entrada: uma lista e o numero a ser inserido
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 Retorno: Não possui
 Objetivo: Insere um numero no final da lista */
 void insereFinal(Lista* lista, int num){
@@ -93,9 +109,15 @@ void insereFinal(Lista* lista, int num){
 }
 
 /* Função numToIndice (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista e um numero
 Retorno: Indice do numero (-1 caso não seja possivel encontrar)
 Objetivo: Tenta procura o indice do número na lista */
+=======
+Entrada: uma lista e um numero
+Retorno: indice do numero (-1 caso não seja possivel encontrar)
+Objetivo: tenta procura o indice do número na lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 int numToIndice(Lista* lista, int num){
     if(listaVazia(lista) == 1){
         return -1;
@@ -120,9 +142,15 @@ int numToIndice(Lista* lista, int num){
 }
 
 /* Função indiceToNum (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista e um indice
 Retorno: Ponteiro para o número do indice (NULL caso não encontre)
 Objetivo: Tenta procura o numero do indice na lista */
+=======
+Entrada: uma lista e um indice
+Retorno: ponteiro para o número do indice (NULL caso não encontre)
+Objetivo: tenta procura o numero do indice na lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 int* indiceToNum(Lista* lista, int indice){
     int *ret = NULL;
 
@@ -151,9 +179,15 @@ int* indiceToNum(Lista* lista, int indice){
 }
 
 /* Função removeNum (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista e um numero
 Retorno: 1 ou 0 (true or false)
 Objetivo: Tenta remover o numero da lista */
+=======
+Entrada: uma lista e um numero
+Retorno: 1 ou 0 (true or false)
+Objetivo: tenta remover o numero da lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 int removeNum(Lista* lista, int num){
     if(listaVazia(lista) == 1){
         return 0;
@@ -193,9 +227,15 @@ int removeNum(Lista* lista, int num){
 }
 
 /* Função removeIndice (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista e um indice
 Retorno: 1 ou 0 (true or false)
 Objetivo: Tenta remover o numero do indice da lista */
+=======
+Entrada: uma lista e um indice
+Retorno: 1 ou 0 (true or false)
+Objetivo: tenta remover o numero do indice da lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 int removeIndice(Lista* lista, int indice){
     if(listaVazia(lista) == 1 || indice < 0){
         return 0;
@@ -231,17 +271,29 @@ int removeIndice(Lista* lista, int indice){
 }
 
 /* Função removeInicio (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista
 Retorno: 1 ou 0 (true or false)
 Objetivo: Tenta remover o primeiro numero da lista */
+=======
+Entrada: uma lista
+Retorno: 1 ou 0 (true or false)
+Objetivo: tenta remover o primeiro numero da lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 int removeInicio(Lista* lista){
     return removeIndice(lista, 0);
 }
 
 /* Função removeFinal (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista
 Retorno: 1 ou 0 (true or false)
 Objetivo: Tenta remover o ultimo numero da lista */
+=======
+Entrada: uma lista
+Retorno: 1 ou 0 (true or false)
+Objetivo: tenta remover o ultimo numero da lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 int removeFinal(Lista* lista){
     return removeIndice(lista, tamanhoLista(lista) - 1);
 }
@@ -255,9 +307,15 @@ int listaVazia(Lista* lista){
 }
 
 /* Função tamanhoLista (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista
 Retorno: O tamanho da lista (N de indices + 1)
 Objetivo: Contar quantos elementos possui a lista */
+=======
+Entrada: uma lista
+Retorno: o tamanho da lista (N de indices + 1)
+Objetivo: contar quantos elementos possui a lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 int tamanhoLista(Lista *lista){
     if(listaVazia(lista) == 1){
         return 0;
@@ -274,9 +332,15 @@ int tamanhoLista(Lista *lista){
 }
 
 /* Função imprimeLista (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista
 Retorno: Não possui
 Objetivo: Imprimir todos os elementos da lista no console */
+=======
+Entrada: uma lista
+Retorno: Não possui
+Objetivo: imprimir todos os elementos da lista no console */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 void imprimeLista(Lista* lista){
     if(listaVazia(lista) == 1){
         printf("A lista esta vazia\n");
@@ -295,9 +359,15 @@ void imprimeLista(Lista* lista){
 }
 
 /* Função limpaLista (Gabriel Fernandes Menoni)
+<<<<<<< HEAD
 Entrada: Uma lista
 Retorno: Não possui
 Objetivo: Retirar todos os elementos da lista */
+=======
+Entrada: uma lista
+Retorno: Não possui
+Objetivo: retirar todos os elementos da lista */
+>>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 void limpaLista(Lista* lista){
     if(listaVazia(lista) == 1){
         return;
