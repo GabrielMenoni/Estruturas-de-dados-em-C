@@ -1,6 +1,6 @@
 //Autor: Gabriel Fernandes Menoni (github.com/GabrielMenoni)
 
-//Inclusão de bibliotecas
+//Inclusão de bibliotecas / Headers
 #include "ListaEncadeada.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +17,7 @@ Lista* criaLista(){
 }
 
 /* Função insereIndice (Gabriel Fernandes Menoni)
-Entrada: uma lista, um indice e o numero a ser inserido
+Entrada: Uma lista, um indice e o numero a ser inserido
 Retorno: 0 ou 1 (true or false)
 Objetivo: Tenta inserir um numero no indice passado
 Obs: Pode inserir em listas vazias. Escopo: de 0 até N+1 (sendo N o ultimo indice) */
@@ -75,7 +75,7 @@ int insereIndice(Lista* lista, int pos, int num){
 }
 
 /* Função insereInicio (Gabriel Fernandes Menoni)
-Entrada: uma lista e o numero a ser inserido
+Entrada: Uma lista e o numero a ser inserido
 Retorno: Não possui
 Objetivo: Insere um numero no indice 0 da lista */
 void insereInicio(Lista* lista, int num){
@@ -84,7 +84,7 @@ void insereInicio(Lista* lista, int num){
 }
 
 /* Função insereFinal (Gabriel Fernandes Menoni)
-Entrada: uma lista e o numero a ser inserido
+Entrada: Uma lista e o numero a ser inserido
 Retorno: Não possui
 Objetivo: Insere um numero no final da lista */
 void insereFinal(Lista* lista, int num){
@@ -93,9 +93,9 @@ void insereFinal(Lista* lista, int num){
 }
 
 /* Função numToIndice (Gabriel Fernandes Menoni)
-Entrada: uma lista e um numero
-Retorno: indice do numero (-1 caso não seja possivel encontrar)
-Objetivo: tenta procura o indice do número na lista */
+Entrada: Uma lista e um numero
+Retorno: Indice do numero (-1 caso não seja possivel encontrar)
+Objetivo: Tenta procura o indice do número na lista */
 int numToIndice(Lista* lista, int num){
     if(listaVazia(lista) == 1){
         return -1;
@@ -120,9 +120,9 @@ int numToIndice(Lista* lista, int num){
 }
 
 /* Função indiceToNum (Gabriel Fernandes Menoni)
-Entrada: uma lista e um indice
-Retorno: ponteiro para o número do indice (NULL caso não encontre)
-Objetivo: tenta procura o numero do indice na lista */
+Entrada: Uma lista e um indice
+Retorno: Ponteiro para o número do indice (NULL caso não encontre)
+Objetivo: Tenta procura o numero do indice na lista */
 int* indiceToNum(Lista* lista, int indice){
     int *ret = NULL;
 
@@ -151,9 +151,9 @@ int* indiceToNum(Lista* lista, int indice){
 }
 
 /* Função removeNum (Gabriel Fernandes Menoni)
-Entrada: uma lista e um numero
+Entrada: Uma lista e um numero
 Retorno: 1 ou 0 (true or false)
-Objetivo: tenta remover o numero da lista */
+Objetivo: Tenta remover o numero da lista */
 int removeNum(Lista* lista, int num){
     if(listaVazia(lista) == 1){
         return 0;
@@ -193,9 +193,9 @@ int removeNum(Lista* lista, int num){
 }
 
 /* Função removeIndice (Gabriel Fernandes Menoni)
-Entrada: uma lista e um indice
+Entrada: Uma lista e um indice
 Retorno: 1 ou 0 (true or false)
-Objetivo: tenta remover o numero do indice da lista */
+Objetivo: Tenta remover o numero do indice da lista */
 int removeIndice(Lista* lista, int indice){
     if(listaVazia(lista) == 1 || indice < 0){
         return 0;
@@ -231,17 +231,17 @@ int removeIndice(Lista* lista, int indice){
 }
 
 /* Função removeInicio (Gabriel Fernandes Menoni)
-Entrada: uma lista
+Entrada: Uma lista
 Retorno: 1 ou 0 (true or false)
-Objetivo: tenta remover o primeiro numero da lista */
+Objetivo: Tenta remover o primeiro numero da lista */
 int removeInicio(Lista* lista){
     return removeIndice(lista, 0);
 }
 
 /* Função removeFinal (Gabriel Fernandes Menoni)
-Entrada: uma lista
+Entrada: Uma lista
 Retorno: 1 ou 0 (true or false)
-Objetivo: tenta remover o ultimo numero da lista */
+Objetivo: Tenta remover o ultimo numero da lista */
 int removeFinal(Lista* lista){
     return removeIndice(lista, tamanhoLista(lista) - 1);
 }
@@ -255,9 +255,9 @@ int listaVazia(Lista* lista){
 }
 
 /* Função tamanhoLista (Gabriel Fernandes Menoni)
-Entrada: uma lista
-Retorno: o tamanho da lista (N de indices + 1)
-Objetivo: contar quantos elementos possui a lista */
+Entrada: Uma lista
+Retorno: O tamanho da lista (N de indices + 1)
+Objetivo: Contar quantos elementos possui a lista */
 int tamanhoLista(Lista *lista){
     if(listaVazia(lista) == 1){
         return 0;
@@ -274,9 +274,9 @@ int tamanhoLista(Lista *lista){
 }
 
 /* Função imprimeLista (Gabriel Fernandes Menoni)
-Entrada: uma lista
+Entrada: Uma lista
 Retorno: Não possui
-Objetivo: imprimir todos os elementos da lista no console */
+Objetivo: Imprimir todos os elementos da lista no console */
 void imprimeLista(Lista* lista){
     if(listaVazia(lista) == 1){
         printf("A lista esta vazia\n");
@@ -295,9 +295,9 @@ void imprimeLista(Lista* lista){
 }
 
 /* Função limpaLista (Gabriel Fernandes Menoni)
-Entrada: uma lista
+Entrada: Uma lista
 Retorno: Não possui
-Objetivo: retirar todos os elementos da lista */
+Objetivo: Retirar todos os elementos da lista */
 void limpaLista(Lista* lista){
     if(listaVazia(lista) == 1){
         return;

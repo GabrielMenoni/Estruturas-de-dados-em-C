@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Lista Encadeada Dinamica",
-      "program": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Lista Encadeada Dinamica/build/Debug/outDebug",
+      "cwd": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Pilha Dinamica",
+      "program": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Pilha Dinamica/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
