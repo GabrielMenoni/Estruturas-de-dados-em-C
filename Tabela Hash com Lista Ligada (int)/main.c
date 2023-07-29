@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 //Inclusão de Bibliotecas / Headers
-=======
-//Autor: Gabriel Fernandes Menoni (github.com/GabrielMenoni)
-
-//Inclusão de Bibliotecas e Headers
->>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 #include <stdio.h>
 #include <stdlib.h>
 #include "HashInt.h"

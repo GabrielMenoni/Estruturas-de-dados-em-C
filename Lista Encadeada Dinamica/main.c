@@ -1,10 +1,6 @@
 //Autor: Gabriel Fernandes Menoni (github.com/GabrielMenoni)
 
-<<<<<<< HEAD
 //Inclusão de Bibliotecas / Headers
-=======
-//Inclusão de Bibliotecas e Headers
->>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
 #include <stdio.h>
 #include <stdlib.h>
 #include "ListaEncadeada.h"
@@ -27,11 +23,7 @@ int main(){
 
     printf("\n");
 
-<<<<<<< HEAD
     //Teste da estrutura
-=======
-    //Teste de funcionalidades
->>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
     imprimeLista(list1);
     printf("%d\n", tamanhoLista(list1));
 
