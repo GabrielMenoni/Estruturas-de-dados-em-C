@@ -24,6 +24,7 @@ During the development of the code I was in the learning phase, so it may be tha
 
 🕗 Total time dedicated to the project: 21Hrs
 
-![image](https://github.com/GabrielMenoni/Estruturas-de-dados-em-C/assets/62768011/a299ba69-6096-4334-9996-a7bc0f6458d2)
+![image](https://github.com/GabrielMenoni/Estruturas-de-dados-em-C/assets/62768011/16edb3fd-e272-4e15-b1f9-f21cdbefb66f)
+
 
 
