@@ -12,14 +12,15 @@ struct No{
 
 typedef struct No* ArvBin;
 
-
 //Protótipos
 ArvBin* criaArvore();
 int insereArv(ArvBin* arv, int num);
 int removeArv(ArvBin* arv, int num);
-void liberaArv(ArvBin* arv);
-void liberaNo(No* atual);
-int arvVazia(ArvBin* arv);
 int consultaElemento(ArvBin* arv, int num);
+int arvVazia(ArvBin* arv);
 int qtdNo(ArvBin* arv);
 int altArv(ArvBin* arv);
+void liberaArv(ArvBin* arv);
+
+//Protótipos de funções auxiliares
+void liberaNo(No* atual);

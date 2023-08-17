@@ -8,13 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-<<<<<<< HEAD
       "cwd": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Tabela Hash com Lista Ligada (int)",
       "program": "c:/Users/conta_ljpaudh/Dropbox/Prog/Estrutura de dados/Tabela Hash com Lista Ligada (int)/build/Debug/outDebug",
-=======
-      "cwd": "c:/Users/conta/Desktop/Tabela Hash (Int)",
-      "program": "c:/Users/conta/Desktop/Tabela Hash (Int)/build/Debug/outDebug",
->>>>>>> a5d46790d0377e56aed0eadd1bbb2d67c75088d5
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

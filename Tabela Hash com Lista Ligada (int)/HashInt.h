@@ -15,11 +15,13 @@ typedef struct{
 
 //Protótipos
 Hash* criaHash(int size);
-int hash(int size, int num);
 void insereElemento(Hash* has, int num);
 int removeElemento(Hash* has, int num);
 int buscaElemento(Hash* has, int num, No* ret);
 int qtdElementos(Hash* has);
 void imprimeHash(Hash* hash);
 void excluiHash(Hash* has);
+
+//Prototipos de funções auxiliares
+int hash(int size, int num);
 void limpa(No* aux);

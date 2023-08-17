@@ -67,18 +67,6 @@ int consultaPilha(Pilha* pilha, int *ret){
     return 1;
 }
 
-/* Função consultaPilha (Gabriel Fernandes Menoni)
-Entrada: Uma pilha e um ponteiro para retorno do elemento
-Retorno: True or false (1 ou 0)
-Objetivo: Retornar o elemento do topo da pilha em (*ret) */
-int pilhaVazia(Pilha* pilha){
-    if(*pilha == NULL){
-        return 1;
-    }
-
-    return 0;
-}
-
 /* Função tamanhoPilha (Gabriel Fernandes Menoni)
 Entrada: Uma pilha
 Retorno: A qtd de elementos na pilha ou -1 caso não seja possivel verificar
@@ -100,6 +88,18 @@ int tamanhoPilha(Pilha* pilha){
     }
 
     return count;
+}
+
+/* Função pilhaVazia (Gabriel Fernandes Menoni)
+Entrada: Uma pilha
+Retorno: True or false (1 ou 0)
+Objetivo: Verificar se a pilha está vazia */
+int pilhaVazia(Pilha* pilha){
+    if(*pilha == NULL){
+        return 1;
+    }
+
+    return 0;
 }
 
 /* Função imprimePilha (Gabriel Fernandes Menoni)

@@ -15,7 +15,7 @@ Pilha* criaPilha();
 int inserePilha(Pilha* pilha, int chave);
 int removePilha(Pilha* pilha);
 int consultaPilha(Pilha* pilha, int *ret);
-int pilhaVazia(Pilha* pilha);
 int tamanhoPilha(Pilha* pilha);
+int pilhaVazia(Pilha* pilha);
 void imprimePilha(Pilha* pilha);
 void liberaPilha(Pilha* pilha);

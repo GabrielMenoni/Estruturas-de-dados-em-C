@@ -26,14 +26,6 @@ Hash* criaHash(int size){
     return new;
 }
 
-/* Função Hash (Gabriel Fernandes Menoni)
-Entrada: Tamanho do vetor e um numero inteiro
-Retorno: Indice do numero na Tabela
-Obs: Função bem básica, recomenda-se verificar e trocar caso tenha necessidade */
-int hash(int size, int num){
-    return num % size;
-}
-
 /* Função insereElemento (Gabriel Fernandes Menoni)
 Entrada: Tabela hash e um numero
 Retorno: Não possui
@@ -179,8 +171,7 @@ void imprimeHash(Hash* hash){
 /* Função excluiHash (Gabriel Fernandes Menoni)
 Entrada: Tabela hash
 Retorno: Não possui
-Objetivo: Desalocar todo o espaço em memoria da tabela hash 
-Obs: Não é recomendavel utilizar a tabela hash após essa função */
+Objetivo: Desalocar todo o espaço em memoria da tabela hash */
 void excluiHash(Hash* has){
     if(has != NULL){
         for(int i = 0; i < has->tam; i++){
@@ -190,6 +181,17 @@ void excluiHash(Hash* has){
         free(has->Elemento);
         free(has);
     }
+}
+
+//========================================================================
+//Funções auxiliares
+
+/* Função Hash (Gabriel Fernandes Menoni)
+Entrada: Tamanho do vetor e um numero inteiro
+Retorno: Indice do numero na Tabela
+Obs: Função core da hash, é recomendado trocar via necessidade do projeto */
+int hash(int size, int num){
+    return num % size;
 }
 
 /* Função limpa (Gabriel Fernandes Menoni)

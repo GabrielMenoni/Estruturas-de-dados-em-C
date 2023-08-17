@@ -206,17 +206,6 @@ int removeArv(ArvBin* arv, int num){
     return 0;
 }
 
-/* Função arvVazia (Gabriel Fernandes Menoni)
-Entrada: Uma ABB
-Retorno: True or false (1 ou 0)
-Objetivo: Verificar se a ABB está vazia */
-int arvVazia(ArvBin* arv){
-    if(arv == NULL || *arv == NULL)
-        return 1;
-
-    return 0;
-}
-
 /* Função consultaElemento (Gabriel Fernandes Menoni)
 Entrada: Uma ABB e um número
 Retorno: True or false (1 ou 0)
@@ -242,6 +231,17 @@ int consultaElemento(ArvBin* arv, int num){
     }
 
     return 1;
+}
+
+/* Função arvVazia (Gabriel Fernandes Menoni)
+Entrada: Uma ABB
+Retorno: True or false (1 ou 0)
+Objetivo: Verificar se a ABB está vazia */
+int arvVazia(ArvBin* arv){
+    if(arv == NULL || *arv == NULL)
+        return 1;
+
+    return 0;
 }
 
 /* Função qtdNo (Gabriel Fernandes Menoni)
@@ -290,8 +290,11 @@ void liberaArv(ArvBin* arv){
 
 }
 
+//========================================================================
+//Funções auxiliares
+
 /* Função liberaNo (Gabriel Fernandes Menoni)
-Entrada: Uma No
+Entrada: Um No
 Retorno: Não possui
 Objetivo: Desalocar toda a memoria do nó e seus filhos */
 void liberaNo(No* atual){
